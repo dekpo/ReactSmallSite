@@ -1,3 +1,5 @@
+import { NavLink  } from 'react-router-dom';
+
 const Header = () => {
     return (
         <header>
@@ -10,10 +12,13 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <NavLink exact="true" className="nav-link" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
                         </ul>
                     </div>
