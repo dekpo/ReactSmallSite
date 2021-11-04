@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -17,9 +16,9 @@ function App() {
       <BrowserRouter>
       <Header />
       <Routes>
-      <Route path="/contact" element={ <Contact /> } />
-      <Route path="/gallery" element={ <Gallery /> } />
-      <Route path="/" element={ <Home /> } />
+      <Route path="/ReactSmallSite/" element={ <Home /> } />
+      <Route path="/ReactSmallSite/contact" element={ <Contact /> } />
+      <Route path="/ReactSmallSite/gallery" element={ <Gallery /> } />
       </Routes>
       </BrowserRouter>
       <Footer />
