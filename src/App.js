@@ -1,7 +1,6 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-
+import './App.css';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Gallery from './components/Gallery';
