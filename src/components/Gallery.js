@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import Pagination from './Pagination';
+
 const Gallery = () => {
   const [galleryData, setGalleryData] = useState([]);
   const [page, setPage] = useState(1);
@@ -29,26 +31,6 @@ const Gallery = () => {
     console.log(page*limit);
   }
 
-  const Pagination = () => (
-    <nav>
-      <ul className="pagination justify-content-center">
-        <li className={"page-item "+(page<2?"disabled":"")}>
-          <a className="page-link" href="#" onClick={ ()=>nextPage(page-1) }>Previous</a>
-        </li>
-        <li className="page-item active"><a className="page-link" href="#" onClick={ ()=>nextPage(page) }>{page}</a></li>
-        {
-          (page*limit<count)?(<li className="page-item"><a className="page-link" href="#" onClick={ ()=>nextPage(page+1) }>{page+1}</a></li>):""
-        }
-        {
-          ((page+1)*limit<count)?(<li className="page-item"><a className="page-link" href="#" onClick={ ()=>nextPage(page+2) }>{page+2}</a></li>):""
-        }
-        <li className={"page-item "+((page)*limit>=count?"disabled":"")}>
-          <a className="page-link" href="#" onClick={ ()=>nextPage(page+1) }>Next</a>
-        </li>
-      </ul>
-    </nav>
-  )
-
   const ListImages = () => {
     return (
       <div className="row">
@@ -69,9 +51,9 @@ const Gallery = () => {
     <section>
       <div className="container-fluid">
         <div className="row"><h1>Gallery</h1></div>
-        <Pagination />
+        <Pagination limit={ limit } count={ count } page={ page } nextPage={ nextPage } />
         <ListImages />
-        <Pagination />
+        <Pagination limit={ limit } count={ count} page={ page } nextPage={ nextPage } />
       </div>
     </section>
   )
