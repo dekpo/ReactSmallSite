@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/ReactSmallSite/static/css/main.5a4619ac.chunk.css",
-    "main.js": "/ReactSmallSite/static/js/main.6456d575.chunk.js",
-    "main.js.map": "/ReactSmallSite/static/js/main.6456d575.chunk.js.map",
-    "runtime-main.js": "/ReactSmallSite/static/js/runtime-main.bef135e6.js",
-    "runtime-main.js.map": "/ReactSmallSite/static/js/runtime-main.bef135e6.js.map",
+    "main.css": "/ReactSmallSite/static/css/main.3afc3e09.chunk.css",
+    "main.js": "/ReactSmallSite/static/js/main.44ed0c0f.chunk.js",
+    "main.js.map": "/ReactSmallSite/static/js/main.44ed0c0f.chunk.js.map",
+    "runtime-main.js": "/ReactSmallSite/static/js/runtime-main.a63afcc3.js",
+    "runtime-main.js.map": "/ReactSmallSite/static/js/runtime-main.a63afcc3.js.map",
     "static/css/2.e6c1e8c5.chunk.css": "/ReactSmallSite/static/css/2.e6c1e8c5.chunk.css",
-    "static/js/2.eea30fa3.chunk.js": "/ReactSmallSite/static/js/2.eea30fa3.chunk.js",
-    "static/js/2.eea30fa3.chunk.js.map": "/ReactSmallSite/static/js/2.eea30fa3.chunk.js.map",
-    "static/js/3.109e8408.chunk.js": "/ReactSmallSite/static/js/3.109e8408.chunk.js",
-    "static/js/3.109e8408.chunk.js.map": "/ReactSmallSite/static/js/3.109e8408.chunk.js.map",
+    "static/js/2.f7b34b66.chunk.js": "/ReactSmallSite/static/js/2.f7b34b66.chunk.js",
+    "static/js/2.f7b34b66.chunk.js.map": "/ReactSmallSite/static/js/2.f7b34b66.chunk.js.map",
+    "static/js/3.393cc401.chunk.js": "/ReactSmallSite/static/js/3.393cc401.chunk.js",
+    "static/js/3.393cc401.chunk.js.map": "/ReactSmallSite/static/js/3.393cc401.chunk.js.map",
     "index.html": "/ReactSmallSite/index.html",
     "static/css/2.e6c1e8c5.chunk.css.map": "/ReactSmallSite/static/css/2.e6c1e8c5.chunk.css.map",
-    "static/css/main.5a4619ac.chunk.css.map": "/ReactSmallSite/static/css/main.5a4619ac.chunk.css.map",
-    "static/js/2.eea30fa3.chunk.js.LICENSE.txt": "/ReactSmallSite/static/js/2.eea30fa3.chunk.js.LICENSE.txt",
+    "static/css/main.3afc3e09.chunk.css.map": "/ReactSmallSite/static/css/main.3afc3e09.chunk.css.map",
+    "static/js/2.f7b34b66.chunk.js.LICENSE.txt": "/ReactSmallSite/static/js/2.f7b34b66.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ReactSmallSite/static/media/loading-buffering.c7d9f081.gif",
     "static/media/logo.6ce24c58.svg": "/ReactSmallSite/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bef135e6.js",
+    "static/js/runtime-main.a63afcc3.js",
     "static/css/2.e6c1e8c5.chunk.css",
-    "static/js/2.eea30fa3.chunk.js",
-    "static/css/main.5a4619ac.chunk.css",
-    "static/js/main.6456d575.chunk.js"
+    "static/js/2.f7b34b66.chunk.js",
+    "static/css/main.3afc3e09.chunk.css",
+    "static/js/main.44ed0c0f.chunk.js"
   ]
 }
