@@ -10,3 +10,22 @@ section{
 .page-link{
   color:#212529 !important;
 }
+img.thumb{
+  min-width: 233px;
+  min-height: 155px;
+  background-image: url('./assets/loading-buffering.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% ;
+}
+img.full{
+  width: 100%;
+}
+.dark{
+  color: #212529 !important;
+  text-decoration: none;
+}
+.liked{
+  color:crimson;
+  text-decoration: none;
+}

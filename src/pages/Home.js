@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import config from "../config.json";
 
 const Carousel = () => {
   const [slides, setSlides] = useState([]);
   const loadSlide = () => {
-    fetch("https://html-learning.com/dwwm2i/dekpo/public/pictures/list?limit=3")
+    fetch(config.API_URL+"/pictures/list?limit=3")
       .then(response => response.json())
       .then(data => {
         console.log(data)

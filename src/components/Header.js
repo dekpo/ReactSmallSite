@@ -1,5 +1,6 @@
 import { NavLink  } from 'react-router-dom';
-import logo from '../logo.svg';
+import logo from '../assets/logo.svg';
+import config from '../config.json';
 
 const Header = () => {
     return (
@@ -15,13 +16,13 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink exact="true" className="nav-link" to="/ReactSmallSite/">Home</NavLink>
+                                <NavLink exact="true" className="nav-link" to={config.HOMEPAGE+"/"}>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/ReactSmallSite/gallery">Gallery</NavLink>
+                                <NavLink className="nav-link" to={config.HOMEPAGE+"/gallery"}>Gallery</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/ReactSmallSite/contact">Contact</NavLink>
+                                <NavLink className="nav-link" to={config.HOMEPAGE+"/contact"}>Contact</NavLink>
                             </li>
                         </ul>
                     </div>

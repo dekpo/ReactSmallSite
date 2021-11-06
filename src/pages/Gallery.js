@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router"
+import config from "../config.json";
 
-import Pagination from './Pagination';
+import ListImages from '../components/ListImages';
+import Pagination from '../components/Pagination';
 
 const Gallery = () => {
+  let { p } = useParams();
+  if (p===undefined) p = 1;
   const [galleryData, setGalleryData] = useState([]);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(parseInt(p));
   const [count,setCount] = useState(0);
   const limit = 6;
 
   const loadApi = () => {
-    fetch("https://html-learning.com/dwwm2i/dekpo/public/pictures/list?page="+page+"&limit="+limit)
+    fetch(config.API_URL+"/pictures/list?page="+page+"&limit="+limit)
       .then(response => response.json())
       .then(data => {
         console.log('Items: ',data);
@@ -17,7 +22,7 @@ const Gallery = () => {
       })
   }
   const countItems = () => {
-    fetch("https://html-learning.com/dwwm2i/dekpo/public/pictures/count")
+    fetch(config.API_URL+"/pictures/count")
       .then(response => response.json())
       .then(data => {
         console.log('Total: ',data.count);
@@ -31,28 +36,12 @@ const Gallery = () => {
     console.log(page*limit);
   }
 
-  const ListImages = () => {
-    return (
-      <div className="row">
-        {
-          galleryData.map(item => {
-            return (
-              <div key={item.id} className="col-12 col-md-4 mb-2 text-center">
-                <img className="img-fluid" src={item.url} alt="Cabane" />
-                <h2 className="h5">{item.title}</h2>
-              </div>)
-          })
-        }
-      </div>
-    )
-  }
-
   return (
     <section>
       <div className="container-fluid">
         <div className="row"><h1>Gallery</h1></div>
         <Pagination limit={ limit } count={ count } page={ page } nextPage={ nextPage } />
-        <ListImages />
+        <ListImages galleryData={ galleryData } page={ page } />
         <Pagination limit={ limit } count={ count} page={ page } nextPage={ nextPage } />
       </div>
     </section>
